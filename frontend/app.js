@@ -17,7 +17,7 @@ function createVacationElement(vacation){
     const div = document.createElement('div')
     div.className = "flex-container"
     div.innerHTML = `
-    <h2><a href="vacation.html?=${vacation.id}">${vacation.location_name}</a></h2>
+    <h2><a href="vacation.html?id=${vacation.id}">${vacation.location_name}</a></h2>
     <img src="${vacation.main_image}"/>
     `
 
