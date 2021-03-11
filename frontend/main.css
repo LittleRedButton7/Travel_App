@@ -1,1 +1,63 @@
-/* start styling with css below! */
+h1 {
+  color:blueviolet;
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 100px;
+}
+
+h2 {
+  text-align: left;
+  color:deeppink;
+}
+
+h2:hover {
+  background-color: lightgoldenrodyellow;
+  font-size: 60px;
+  font-family: "Helvetica";
+  border: 5px ridge orange;
+}
+
+h2:visited {
+  color:pink;
+}
+
+body {
+  background-color:deepskyblue;
+}
+img {
+  height: 400px;
+  width: 400px;
+  border: 5px ridge ;
+}
+
+img:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+.vacations {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 18px;
+}
+
+.vacations:hover {
+  background-color: lightgreen;
+  display: flexbox;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px auto 200px;
+  justify-content:space-around; 
+  padding: 40px;
+  border: 5px groove rgb(255, 0, 255);
+}
+
+body {
+  min-height:100vh;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  perspective:1000px;
+  perspective-origin:center top;
+  transform-style:preserve-3d;
+  overflow:hidden;
+}
