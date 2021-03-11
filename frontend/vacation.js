@@ -2,13 +2,6 @@ const queryParams = new URLSearchParams(window.location.search)
 const id = queryParams.get('id')
 console.log(id)
 
-
-
-// const queryParams = window.location.search
-// const queryParamsObject = new URLSearchParams(queryParams)
-// const id = queryParamsObject.get('id')
-// console.log(id)
-
 fetch(`http://localhost:3000/vacations/${id}`)
   .then(response => response.json())
   .then(vacation => {
@@ -24,7 +17,6 @@ fetch(`http://localhost:3000/vacations/${id}`)
     document.body.append(div)
   })
 
-// function handleResponse(response){
-//   return response.json()
+
 
 
