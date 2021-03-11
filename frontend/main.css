@@ -1,3 +1,16 @@
+body {
+  background-color:deepskyblue;
+  min-height:100vh;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  perspective:1000px;
+  perspective-origin:center top;
+  transform-style:preserve-3d;
+  overflow:hidden;
+}
+
+
 h1 {
   color:blueviolet;
   text-align: center;
@@ -21,9 +34,6 @@ h2:visited {
   color:pink;
 }
 
-body {
-  background-color:deepskyblue;
-}
 img {
   height: 400px;
   width: 400px;
@@ -51,13 +61,19 @@ img:hover {
   border: 5px groove rgb(255, 0, 255);
 }
 
-body {
-  min-height:100vh;
-  display:grid;
-  justify-content:center;
-  align-content:center;
-  perspective:1000px;
-  perspective-origin:center top;
-  transform-style:preserve-3d;
-  overflow:hidden;
+
+.plane-holder {
+  background-color: brown;
+  height: 500px;
+  width: 200px;
+  animation: fly-in 4s infinite ease-in;
+}
+
+@keyframes fly-in {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(400px);
+  }
 }
