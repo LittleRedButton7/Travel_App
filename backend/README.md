@@ -16,7 +16,7 @@ Welcome to Fly Away!
 We created our own API using a Rails backend and deployed it on Rails. We used JavaScript and HTML to render the data on the pages. 
 
 ## Intro Video
-[Fly Away! on YouTube]()
+[Fly Away! on YouTube](https://youtu.be/P52TS0hV62s)
 
 ## Technologies
 * Ruby on Rails - 6.0.3, 6.0.3.5
