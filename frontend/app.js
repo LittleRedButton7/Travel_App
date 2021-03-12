@@ -1,5 +1,8 @@
 // console.log("Hello World")
 const vacationList = document.querySelector('.vacations')
+let plane = document.getElementById("plane-img");
+
+
 
 fetch('http://localhost:3000/vacations')
     .then(handleResponse)
@@ -24,3 +27,15 @@ function createVacationElement(vacation){
     vacationList.append(div)
 
 }
+
+function removePlane() {
+    plane.remove();
+}
+
+function vanishPlane() {
+    setTimeout(removePlane, 4800);
+}
+
+window.addEventListener('load', (event) => {
+    vanishPlane()
+});

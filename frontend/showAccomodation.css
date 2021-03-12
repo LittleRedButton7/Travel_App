@@ -22,6 +22,13 @@ img {
     width: 50%;
 }
 
+form {
+    color:blueviolet;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 50px;
+}
+
 /* .show-card {
     display: block;
     margin-left: auto;
