@@ -11,13 +11,4 @@ class UsersController < ApplicationController
 
         render json: @user
     end
-
-    def create
-        @newUser = User.create(
-            name: params[:name],
-            email: params[:email],
-            vacation_id: params[:vacation_id]
-        )
-    end
-
 end
