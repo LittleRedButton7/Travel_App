@@ -12,6 +12,4 @@ class VacationsController < ApplicationController
         render json: @vacation
     end
 
-    
-
 end
