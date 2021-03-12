@@ -19,12 +19,12 @@ We created our own API using a Rails backend and deployed it on Rails. We used J
 [Fly Away! on YouTube]()
 
 ## Technologies
-* Ruby - version 2.6.1/2.6.6
-* Rails - 6.0.3, 6.0.3.5
+* Ruby on Rails - 6.0.3, 6.0.3.5
+* SQLite3 - version 1.4
 * JavaScript
 * HTML
 * CSS
-* SQLite3 - version 1.4
+
 
 ## Setup
 * Fork and clone this repo into your local branch.
@@ -35,14 +35,42 @@ We created our own API using a Rails backend and deployed it on Rails. We used J
 
 ## Code Examples
 ```
+fetch(`http://localhost:3000/vacations/${id}`)
+  .then(response => response.json())
+  .then(vacation => {
+    const div = document.createElement('div')
 
+    div.className = "show-card"
+    div.innerHTML = `
+      <h1>${vacation.location_name}</h1>
+      <h3>${vacation.climate}</h3>
+      <img src="${vacation.accommodataion_image}"/>
+      <ul>
+        <form action="http://localhost:3001" onsubmit="myFunction()">
+          Enter name to book: <input type="text" name="fname">
+          <input type="submit" value="Submit">
+        </form>
+        <script>
+        function myFunction() {
+          alert("Booked! One of our agents will reach out to confirm details and payment options.");
+        }
+        </script>
+        <h3><a href="http://localhost:3001">Go Home</a></h3>
+      </ul>
+      `
+
+    document.body.append(div)
+  })
 ```
+
 ## Features
 * Click on a destination to see a show page.
-* 
+* Future Features 
+    *Book Now - This will tie into the user's profile
+    *Parallaxing background (clouds)
 
 ## Status
-Project is functional but has a lot of room to build out more features and data.
+Project is functional but has room to build out more features and data. Hopefully one day this will be a fully deployed travel app!
 
 ## Contact
 Feel free to reach out!

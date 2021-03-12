@@ -27,13 +27,6 @@ fetch(`http://localhost:3000/vacations/${id}`)
       </ul>
       `
 
-    
-    // bookNowElement.addEventListener("click", bookNote);
-
-    // function bookNote(){
-    //   document.bookNowElement.innerHTML = "A rep will contact you";
-    // }
-
     document.body.append(div)
   })
 
