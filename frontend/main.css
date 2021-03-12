@@ -50,20 +50,36 @@ img:hover {
 
 
 .plane-holder {
-  position:absolute;
-  height: 500px;
-  width: 200px;
-  animation: fly-in 10s infinite ease-in;
+  margin: -500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 300px;
+  width: 400px;
+  animation: fly-in 5s infinite ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+#plane-img{
+  border: none;
 }
 
 @keyframes fly-in {
   0% {
-    transform: translateX(-200px);
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(1.5)
   }
   50% {
-    transform: translateX(0px);
+    transform: scale(2);
+  }
+  75%{
+    transform: scale(2.5);
   }
   100% {
-    transform: translateX(500px);
+    transform: scale(3);
   }
 }
